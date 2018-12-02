@@ -1,16 +1,16 @@
-# Build image: docker-compose up --build
+# Build image: docker-compose build
 # Run image with arg: docker-compose run <service-name> <python-filename>; eg., docker-compose run myapp print-name.py
 # Run image without arg(default): docker-compose run <service-name>; eg., docker-compose run myapp; this will run default py file as in docker-compose myapp:command
 version: '3'
 services:
   myapp:
-    container_name: python3-docker-image
+    container_name: rsukumar/python3-docker
+    image: rsukumar/python3-docker
     build:
       context: .
       dockerfile: ./Dockerfile
       args:
         pythonfile: print-name.py
-    image: python3-docker-image
     ports:
       - "5000:5000"
     volumes:
