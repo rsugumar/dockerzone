@@ -9,8 +9,6 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-      args:
-        pythonfile: print-name.py
     ports:
       - "5000:5000"
     volumes:
