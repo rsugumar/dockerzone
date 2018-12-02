@@ -1,5 +1,7 @@
-# python
-Run python scripts in docker
+## python in docker
+Run any python scripts in docker container now.
+
+Just write any python script file and we can run in docker following the below:
 
 To Build image: docker-compose up --build
 To Run image with arg: docker-compose run <service-name> <python-filename>; eg., docker-compose run myapp print-name.py
