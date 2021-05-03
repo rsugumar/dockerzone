@@ -1,4 +1,5 @@
 ipython
 pandas
 scikit-learn
+torch
 torchvision
